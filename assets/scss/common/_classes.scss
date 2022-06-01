@@ -8,9 +8,8 @@
 
   padding: 0.5em 1em;
 
-  letter-spacing: 0.1em;
-
   transition: 0.5s;
+  letter-spacing: 0.1em;
 
   &:hover,
   &:focus {
@@ -19,9 +18,13 @@
 }
 
 .btn--light {
+  border: 2px solid $color-light;
+  background-color: rgba($color-light, 0.1);
+
   @include lg-min {
     min-width: 250px;
     height: 60px;
+
     font-size: 1.125rem;
   }
   @include lg-md {
@@ -32,19 +35,20 @@
     min-width: 170px;
     height: 40px;
   }
-  background-color: rgba($color-light, 0.1);
-  border: 2px solid $color-light;
 }
 
 .btn--primary {
   height: 60px;
+
+  border: 2px solid $color-primary;
+  background-color: rgba($color-primary, 0.8);
+
   font-size: 1.125rem;
+
   @include sm-min {
     min-width: 350px;
   }
   @include sm {
     width: 100%;
   }
-  background-color: rgba($color-primary, 0.8);
-  border: 2px solid $color-primary;
 }
