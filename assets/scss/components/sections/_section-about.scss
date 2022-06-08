@@ -7,9 +7,8 @@
   @extend %section;
 
   &__container {
-    display: grid;
-
     @extend %container;
+    display: grid;
 
     @include lg-min {
       gap: $gap-x5;
